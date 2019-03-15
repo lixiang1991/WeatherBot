@@ -1344,6 +1344,36 @@
         "text": "台南市南区几度"
       },
       {
+        "intent": "weather_date-time",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "现在",
+            "entity": "date-time"
+          }
+        ],
+        "text": "现在天气怎么样"
+      },
+      {
+        "intent": "weather_address_date-time",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "武汉",
+            "entity": "address"
+          },
+          {
+            "start": 2,
+            "end": 4,
+            "value": "现在",
+            "entity": "date-time"
+          }
+        ],
+        "text": "武汉现在的天气怎么样"
+      },
+      {
         "intent": "greet",
         "entities": [
         ],
@@ -1433,37 +1463,13 @@
       {
         "value": "明天",
         "synonyms": [
-          "明日"
+          "明日","第二天"
         ]
       },
       {
         "value": "今天",
         "synonyms": [
-          "早上"
-        ]
-      },
-      {
-        "value": "今天",
-        "synonyms": [
-          "中午"
-        ]
-      },
-      {
-        "value": "今天",
-        "synonyms": [
-          "晚上"
-        ]
-      },
-      {
-        "value": "今天",
-        "synonyms": [
-          "傍晚"
-        ]
-      },
-      {
-        "value": "今天",
-        "synonyms": [
-          "今日"
+          "早上","上午","中午","下午","晚上","今日","现在","傍晚"
         ]
       }
     ]

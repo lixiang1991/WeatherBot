@@ -8,3 +8,13 @@ pipeline:
 - name: "ner_synonyms"
 - name: "intent_featurizer_mitie"
 - name: "intent_classifier_sklearn"
+
+policies:
+  - name: KerasPolicy
+    epochs: 100
+    max_history: 5
+  - name: FallbackPolicy
+    fallback_action_name: 'action_default_fallback'
+  - name: MemoizationPolicy
+    max_history: 5
+  - name: FormPolicy

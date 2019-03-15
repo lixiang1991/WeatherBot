@@ -13,6 +13,8 @@ slots:
     type: text
   matches:
     type: unfeaturized
+  requested_slot:
+    type: unfeaturized
 
 entities:
   - address
